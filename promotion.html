@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discount Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin: auto;
+      max-width: 400px;
+      padding: 20px;
+    }
+    
+    label {
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    input[type="number"], input[type="text"] {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 8px;
+      width: 100%;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="mailto:adem.zahi@ieee.org">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+</div>
+  <h1>Discount Calculator</h1>
+  <form>
+    <label for="original-price">Original Price:</label>
+    <input type="number" id="original-price" placeholder="Enter original price"><br><br>
+    <label for="discount-percentage">Discount Percentage:</label>
+    <input type="number" id="discount-percentage" placeholder="Enter discount percentage"><br><br>
+    <button onclick="calculate()">Calculate</button><br><br>
+    <label for="final-price">Final Price:</label>
+    <input type="text" id="final-price" readonly>
+  </form>
+  
+  <script>
+    function calculate() {
+      const originalPrice = document.getElementById("original-price").value;
+      const discountPercentage = document.getElementById("discount-percentage").value;
+      const finalPrice = originalPrice * (1 - discountPercentage / 100);
+      document.getElementById("final-price").value = finalPrice.toFixed(2);
+    }
+  </script>
+</body>
+</html>

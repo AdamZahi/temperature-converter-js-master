@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+  padding: 20px;
+} 
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: gray;
+}
+.navbar .logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+  
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+
+body{
+  background: url(bg.png) no-repeat;
+	background-size: cover;
+	height: 100vh;
+  margin-top: 60px;
+  text-align:center;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+input[type=number] {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/* temp */
+#input-celsius{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-fahrenheit{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-kelvin{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+
+/* time */
+#input-cm{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-inch{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-foot{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+/* time */
+#input-year{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-day{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-hr{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+
+/* mass */
+#input-dt{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-eu{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-usd{
+  background-color: #42a0d9;
+  font-size: 2.5rem;}
+
+/* mass */
+#input-kg{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-oz{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-lb{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+/* data */
+#input-kb{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-mb{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-gb{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+/* speed */
+#input-kph{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#input-mph{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+#input-kn{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+
+/* promotion */
+#original_price{
+  background-color: #52DDCF;
+  font-size: 2.5rem;
+}
+
+#discount_percentage{
+  background-color: #16BAC5;
+  font-size: 2.5rem;
+}
+
+button{
+  background-color: #42a0d9;
+  font-size: 2.5rem;
+}
+
+.form{
+  align-items: center;
+  text-align: center;
+}
+
+
+
+label{
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 5px;
+}
+.form-padding {
+  padding: 2rem 1rem;
+}
+
+::-webkit-input-placeholder {
+  color: #e5e5e5 !important;
+  text-align: center;
+}
+::-moz-placeholder {
+  color: #e5e5e5 !important;
+  text-align: center;
+
+}
+:-ms-input-placeholder {
+  color: #e5e5e5 !important;
+  text-align: center;
+  
+}
+:-moz-placeholder {
+  text-align: center;
+
+  color: #e5e5e5 !important;
+}
+
+footer{
+  padding-top: 1.5rem;
+  font-size: 0.7rem;
+  line-height: 0.2rem;
+  text-align:center;
+}
+
+.icons{
+  max-width: 25px;
+  height: auto;
+}
+
+
